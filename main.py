@@ -16,8 +16,8 @@ sign_labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
                'Thank you very much']
 
 # ------------------ Load Models ------------------
-STGCN_MODEL_PATH = "model/stgcn_model.h5"
-YOLO_MODEL_PATH = "model/yolo11_best.pt"
+STGCN_MODEL_PATH = "stgcn_model.h5"
+YOLO_MODEL_PATH = "yolo11_best.pt"
 
 @st.cache_resource
 def load_models():
@@ -168,3 +168,4 @@ if st.session_state.run:
         stframe.image(frame, channels="BGR", use_container_width=True)
 
     cap.release()
+
